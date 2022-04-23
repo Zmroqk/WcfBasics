@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfWcfClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfWcfClient"
+        mc:Ignorable="d"
+        Background="Gray"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBox x:Name="txbX" Width="200"/>
+        <TextBox x:Name="txbY" Width="200"/>
+        <TextBox x:Name="txbResult" Text="{Binding Result}" Width="200"/>
+        <Button x:Name="btnAdd" Click="btnAdd_Click" Content="Add" Width="200"/>
+        <Button x:Name="btnSubstract" Click="btnSubstract_Click" Content="Substract" Width="200"/>
+        <Button x:Name="btnMultiply" Click="btnMultiply_Click" Content="Multiply" Width="200"/>
+        <Button x:Name="btnDivide" Click="btnDivide_Click" Content="Divide" Width="200"/>
+    </StackPanel>
+</Window>
